@@ -1,661 +1,253 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Bhumi Tailor</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="css/mdb.min.css" rel="stylesheet">
-    <!-- Your custom styles (optional) -->
+    <!-- Custom styles -->
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-
-    <!---->
+    <!-- Navbar -->
     <header>
-        <!-- Additional container -->
         <div class="container">
-            <!--Navbar -->
-            <nav class="navbar navbar-toggleable-md navbar-expand-md navbar-dark blue-gradient fixed-top scrolling-navbar">
-                <!--<nav class="mb-1 navbar navbar-expand-lg navbar-dark blue-gradient"> -->
+            <nav class="navbar navbar-expand-md navbar-dark blue-gradient fixed-top scrolling-navbar">
                 <a class="navbar-brand" href="#">
-                  <img src="https://Bhumi2512.github.io/img/sample.jpg" height="30" alt="Bhumi Tailor">
-                 </a>
-
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333" aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="https://Bhumi2512.github.io/img/sample.jpg" height="30" alt="Bhumi Tailor">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                    aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-                    <ul class="smooth-scroll navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                <i class="fas fa-home"></i> Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#one">
-                                <i class="fas fa-laptop-code"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#two"><i class="fas fa-briefcase"></i> Experience</a>
-                        </li>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" href="#three"><i class="fas fa-school"></i> Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#four"><i class="fas fa-code-branch"></i> Projects</a>
-                        </li>
-
-                        <!-- In case you want to have another dropdown menu within your options, uncomment this
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown
-                </a>
-                <div class="dropdown-menu dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-            -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav mr-auto smooth-scroll">
+                        <li class="nav-item active"><a class="nav-link" href="#"><i class="fas fa-home"></i> Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills"><i class="fas fa-laptop-code"></i> Skills</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#education"><i class="fas fa-school"></i> Education</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects"><i class="fas fa-code-branch"></i> Projects</a></li>
                     </ul>
-
                     <ul class="navbar-nav ml-auto nav-flex-icons">
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="https://twitter.com/bhumi_tailor">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="https://github.com/bhumi2512">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light" href="https://www.linkedin.com/in/bhumitailor/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="https://twitter.com/bhumi_tailor"><i class="fab fa-twitter"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://github.com/bhumi2512"><i class="fab fa-github"></i></a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/bhumitailor/"><i class="fab fa-linkedin"></i></a></li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="fas fa-user"></i>
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                                <a class="dropdown-item" href="#"> <i class="far fa-envelope"></i> e-mail</a>
-                                <!-- <a class="dropdown-item" href="#"><i class="fas fa-chess"></i> Hobbies</a>
-                    <a class="dropdown-item" href="#"><i class="far fa-address-card"></i> Other Info</a> -->
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenu">
+                                <a class="dropdown-item" href="mailto:bhoomi2512@gmail.com"><i class="far fa-envelope"></i> Email</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <!--/.Navbar -->
         </div>
     </header>
-    <!--Main Navigation-->
-    <!--Main layout-->
-    <main class="mt-5">
-        <!--Main container-->
-        <div class="container pale-red">
-            <br>
-            <br>
 
-            <br>
+    <!-- Main Content -->
+    <main class="mt-5 pt-5">
+        <div class="container">
 
-            <!--Grid row-->
-            <div class="row mb-4">
-                <!--Grid column-->
+            <!-- Intro Section -->
+            <div class="row mb-5">
                 <div class="col-md-5 mb-4">
-
-                    <div class="view overlay z-depth-1-half">
-                        <img src="https://Bhumi2512.github.io/img/Graduation.jpg" class="img-fluid" alt="">
-                        <!-- <div class="mask rgba-brown-strong"></div> -->
-                    </div>
+                    <img src="https://Bhumi2512.github.io/img/Graduation.jpg" class="img-fluid rounded z-depth-1" alt="Bhumi Tailor">
                 </div>
-
-                <!--Grid column-->
                 <div class="col-md-7 mb-4">
                     <div class="text-center">
                         <h1><b>Bhumi Tailor</b></h1>
-<hr>
-<p>
-    Technical Solutions Specialist with a strong background in customer success, application support, and cloud technologies. 
-    I have over 7 years of experience helping customers resolve technical issues, improving product adoption, and delivering excellent customer experiences.
-</p>
-
-<p>
-    I hold a Master’s degree in Computer Science from Memorial University of Newfoundland and a Bachelor’s degree in Electronics and Communication Engineering. 
-    My expertise includes troubleshooting software applications, working with cloud platforms, analyzing technical issues, and collaborating with cross-functional teams to deliver reliable solutions.
-</p>
-
-<p>
-    I am passionate about technology, continuous learning, and solving complex problems that improve user experience and business outcomes.
-</p>
-                        <!-- <a href="https://mdbootstrap.com/" class="btn btn-success">Get it now!</a> -->
-                        <a class="btn" href="https://Bhumi2512.github.io/Bhumi Tailor_Resume.pdf">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
+                        <hr>
+                        <p>Technical Solutions Specialist with a strong background in <b>application support, customer success, and cloud technologies</b>. Over 7 years of experience helping customers resolve technical issues and improve product adoption.</p>
+                        <p>Master’s degree in Computer Science from Memorial University of Newfoundland and Bachelor’s in Electronics and Communication Engineering. Skilled in troubleshooting software applications, analyzing system issues, and collaborating with cross-functional teams.</p>
+                        <p>Passionate about technology, problem-solving, and improving user experience.</p>
+                        <a class="btn btn-primary" href="https://Bhumi2512.github.io/Bhumi Tailor_Resume.pdf"><i class="fas fa-download"></i> Download Resume</a>
                     </div>
                 </div>
-                <!--Grid column-->
-                <!--Grid row-->
-                <div class="row mb-4">
+            </div>
 
-                   
-                        <!--Grid column-->
-                    <div class="col-lg-4 col-md-12 mb-4">
+            <!-- Skills Section -->
+            <section id="skills" class="mb-5">
+                <div class="text-center mb-4">
+                    <h2><b>Technical Skills</b></h2>
+                </div>
 
-                        <!--Card-->
-                        <section id="one">
-                            <div class="card">
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <h5><b>Application Support & Tools</b></h5>
+                        <p>ServiceNow, Jira, CRM systems, ticket management, incident resolution</p>
+                        <div class="progress mb-3" style="height:20px;">
+                            <div class="progress-bar blue darken-2" style="width:90%"></div>
+                        </div>
 
-                                <!--Card image-->
-                                <div class="view overlay">
-                                    <img src="https://Bhumi2512.github.io/img/skills.jpg" style="height:175px;" class="card-img-top" alt="">
-                                    <a href="#">
-                                        <!--  <div class="mask rgba-white-slight"></div> -->
+                        <h5><b>Cloud & SaaS Platforms</b></h5>
+                        <p>Google Workspace, Microsoft 365, Cloud administration</p>
+                        <div class="progress mb-3" style="height:20px;">
+                            <div class="progress-bar blue darken-2" style="width:85%"></div>
+                        </div>
 
-                                    </a>
-                                </div>
+                        <h5><b>Programming & Technical</b></h5>
+                        <p>Python, JavaScript, C++, SQL, APIs, troubleshooting</p>
+                        <div class="progress mb-3" style="height:20px;">
+                            <div class="progress-bar blue lighten-2" style="width:70%"></div>
+                        </div>
 
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <!-- <h4 class="card-title">Skills</h4>
-
-            <!--<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                                    <!-- <ul>
-            <li>Programming languages: C, C++, Java, Python, MATLAB, JavaScript, Fortran</li>
-            <li>Operating systems: Windows, Mac, Linux (red hat/Ubuntu), Unix</li>
-            <li>SaaS products: G Suite, Microsoft Office 365, G control, Google vault, Mail vault</li>
-            <li>CRM: Zoho CRM</li>
-            <!-- <li>Technical knowledge obtained from education and work experience</li> -->
-                                    <!-- <li>Research, analytical and problem-solving skills gained during group and research projects</li>
-
-            </ul> -->
-
-
-
-                                    <h2 class="card-title"><b>Skills</b></h2>
-                                    <!--Text-->
-                                    C/C++ <i class="fab fa-suse"></i> <i class="fab fa-redhat"></i> <i class="fas fa-server"></i> <i class="fas fa-desktop"></i> <i class="fas fa-hdd"></i>
-                                    <div class="progress md-progress" style="height: 20px">
-                                        <div class="progress-bar blue darken-2" role="progressbar" style="width: 100%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <br> HTML <i class="fab fa-linux"></i>
-                                    <div class="progress md-progress" style="height: 20px">
-                                        <div class="progress-bar blue darken-2" role="progressbar" style="width: 100%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <br> CSS <i class="fab fa-python"></i>
-                                    <div class="progress md-progress" style="height: 20px">
-                                        <div class="progress-bar blue" role="progressbar" style="width: 80%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <br> Javascipt <i class="fab fa-html5"></i>
-                                    <div class="progress md-progress" style="height: 20px">
-                                        <div class="progress-bar blue lighten-2" role="progressbar" style="width: 60%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <br> MATLAB <i class="fab fa-css3-alt"></i>
-                                    <div class="progress md-progress" style="height: 20px">
-                                        <div class="progress-bar blue lighten-2" role="progressbar" style="width: 60%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <br> Java <i class="fab fa-js-square"></i>
-                                    <div class="progress md-progress" style="height: 20px">
-                                        <div class="progress-bar blue lighten-2" role="progressbar" style="width: 60%; height: 20px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-
-                                    <br>
-
-                                    <!-- Button trigger modal -->
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Other Skills and Project details...</button>
-
-                                    <!-- Modal -->
-                                    <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel">Project Experience</h5>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body ">
-                                                    <h6>Projects <i class="fas fa-laptop-code"></i> </h6>
-                                                    <ul>
-                                                        <li>
-                                                            <strong>Web Development - Graduate Students Recruitment System</strong><emp>(Software Engineering)</emp>
-                                                            <ul>
-                                                                <li>
-                                                                    Used JavaScript and Node.js to build the website
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <strong>Machine learning with python</strong><emp>(Machine leaning)</emp>
-                                                            <ul>
-                                                                <li>
-                                                                    Used Python to evaluate various machine learning Machine learning methods for Regression, Classification etc.
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <strong>Web development bootcamp</strong><emp>(Online course on Udemy)</emp>
-                                                            <ul>
-                                                                <li>
-                                                                    Online training course on HTML, CSS and Java
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <strong>Algorithm complexity finding methods</strong><emp>(Applied algorithms)</emp>
-                                                            <ul>
-                                                                <li>
-                                                                    Used dynamic programing strategy, analysed shortest path using algorithms
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-                                                        <li>
-                                                            <strong>Scene change detection methods</strong><emp>(Image processing)</emp>
-                                                            <ul>
-                                                                <li>
-                                                                    Image processing using MATLAB
-                                                                </li>
-                                                            </ul>
-                                                        </li>
-
-
-                                                    </ul>
-                                                    <h6>Training and certification <i class="far fa-handshake"></i></h6>
-                                                    <ul>
-                                                        <li>
-                                                            <ul>
-                                                                <li><strong>Coding 101 workshop on Python and Git</strong>, Women In Science and Engineering Graduate Student Society</li>
-                                                                <li><strong>Certification course Sales specialist (Cloud services)</strong>, Google Partners University</li>
-                                                                <li><strong>Cryptography and network security</strong>, Indian Institute of Technology</li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                    <h6>Tools I'm familiar with... <i class="fas fa-toolbox "></i></h6>
-                                                    <ul>
-                                                        <li>
-                                                            <strong>Collaboration tools:</strong> Github, Gitlab
-                                                        </li>
-                                                        <li><strong>Meeting tools:</strong> WebEx, Zoom, Slack, Lotus, Google +, Skype </li>
-                                                        <li>
-                                                            <strong>MS Office:</strong> Word, Excel, PowerPoint
-                                                        </li>
-                                                        <li>
-                                                            <strong>IDEs:</strong> Eclipse, PyCharm, VisualStudio Code
-                                                        </li>
-                                                        <li><strong>Various desktop Operating Systems: </strong>Windows, Mac, and Linux (Ubuntu) </li>
-                                                    </ul>
-                                                </div>
-                                                <div class="modal-footer ">
-                                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-
-                            </div>
-                        </section>
-                            <!--/.Card-->
-
+                        <h5><b>Data & Analytics</b></h5>
+                        <p>Excel, Power BI, reporting dashboards, data analysis</p>
+                        <div class="progress mb-3" style="height:20px;">
+                            <div class="progress-bar blue lighten-2" style="width:75%"></div>
+                        </div>
                     </div>
-                    
-                    
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <section id="two">
-                            <!--Card-->
-                            <div class="card">
 
-                                <!--Card image-->
-                                <div class="view overlay">
-                                    <img src="https://Bhumi2512.github.io/img/work-experience.jpg" style="height:175px;" class="card-img-top" alt="">
-                                    <a href="#">
-                                        <!--  <div class="mask rgba-white-slight"></div> -->
-                                    </a>
-                                </div>
-
-                                <!--Card content-->
-                                <div class="card-body">
-                                    <!--Title-->
-                                    <h2 class="card-title"><b>Work Experience</b></h2>
-                                    <!--Text-->
-                                    <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-
-                                    <h5><b>Software Developer</b></h5>
-                                    <p>
-                                        <emp>Avalon  Holographics</emp>
-                                    </p>
-                                    <p class="card-text ">
-                                        <ul>
-                                            <li>Developed C++ for Visual studio code to enhance working functionality of Holodeck</li>
-                                            <!-- <li>Implemented code to manage Holodeck scene with controllers</li> -->
-                                            <li>Worked on method to generate a high-resolution, higher-quality render of the displayed view in Holodeck Light Field</li>
-                                            <li>Achieved hardware-accelerated rendering using OpenGL API to interact with a GPU </li>
-                                            <li>Worked with DirectX API to handle tasks related to rendering 2D and 3D vector graphics</li>
-                                        </ul>
-                                    </p>
-
-                                    <h5><b>Cloud Analyst</b></h5>
-                                    <p>
-                                        <emp>Shivaami Cloud services pvt ltd.</emp>
-
-                                        <!-- <p class="card-text ">
+                    <div class="col-md-6 mb-4">
+                        <h5><b>Tools & Platforms</b></h5>
                         <ul>
-                            <li>Manage multiple domains and configure Google Apps services</li>
-                            <li>Handling Sales for G Suites from pre-sales to hand over</li>
-                            <li>Utilized customer relation management (CRM) to effectively manage and analyze customer interaction</li>
-                            <li>Trained and mentored new employees using Individual Development Process and Giving onsite demonstration and training of cloud services</li>
+                            <li>Collaboration: GitHub, GitLab</li>
+                            <li>Meeting Tools: WebEx, Zoom, Slack, Skype</li>
+                            <li>MS Office: Word, Excel, PowerPoint</li>
+                            <li>IDEs: Eclipse, PyCharm, Visual Studio Code</li>
+                            <li>Operating Systems: Windows, MacOS, Linux (Ubuntu)</li>
                         </ul>
-                    </p> -->
-
-
-                                    </p>
-                                </div>
-
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#basicExampleModal">Details</button>
-
-                                <!-- Modal -->
-                                <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">Work Experience</h5>
-                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body ">
-
-
-                                                <h5>Cloud Analyst</h5>
-                                                <p>
-                                                    <emp>Shivaami Cloud services pvt ltd.</emp>
-                                                </p>
-                                                <p class="card-text ">
-                                                    <ul>
-                                                        <li>Manage multiple domains and configure Google Apps services</li>
-                                                        <li>Handling Sales for G Suites from pre-sales to hand over</li>
-                                                        <li>Utilized customer relation management (CRM) to effectively manage and analyze customer interaction</li>
-                                                        <li>Trained and mentored new employees using Individual Development Process and Giving onsite demonstration and training of cloud services</li>
-                                                    </ul>
-
-
-                                                    <div class="modal-footer ">
-                                                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-                                                    </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-                                <!--/.Card-->
-                        
-                                </section>
-                   
-
                     </div>
-                    <!-- </section>-->
-                    <!--Grid column-->
-                    <!--Grid column-->
-                    
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <!-- <section id="three"> -->
-                    <!--Card-->
-                    <div class="card">
-
-                        <!--Card image-->
-                        <div class="view overlay">
-                            <img src="https://Bhumi2512.github.io/img/education.jpg" style="height:175px;" class="card-img-top" alt="">
-                            <a href="#">
-                                <!-- <div class="mask rgba-white-slight"></div> -->
-                            </a>
-                        </div>
-
-                        <!--Card content-->
-                        <div class="card-body">
-                            <!--Title-->
-                            <h2 class="card-title"><b>Education</b></h2>
-                            <!--Text-->
-                            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                            <!-- <ul>
-            <li>Master of Computer Science </li>
-            <ul>
-                <li>Memorial University of Newfoundland and Labrador, St. John’s, NL</li>
-            </ul>
-
-            <li>Bachelor of Electronics and Communication </li>
-            <ul>
-                <li>Gujarat Technological University, Surat, India</li>
-            </ul>
-            </ul>
-                -->
-                            <!--Text-->
-                            <img src="https://Bhumi2512.github.io/img/MUN_Logo_Pantone.jpg" alt="Memorial University of Newfoundland Bhumi Tailor Masters in Computer Science " class=" rounded float-right " style="width: 75px ">
-                            <h4><b>MSc in Computer Science</b></h4>
-                            <p><h5>Memorial University of Newfoundland, Canada</h5></p>
-
-
-                            <img src="https://Bhumi2512.github.io/img/GTU.jpg" alt="Gujarat Technological University,SCET - Electronics and Communication " class=" rounded float-right " style="width: 75px ">
-                            <h4><b>BE in Electronics and Communications</b></h4>
-                            <p><h5>Gujarat Technological University,India</h5></p>
-
-
-                            <!--<a href="#" class="btn btn-success">Button</a>-->
-                        </div>
-
-                    </div>
-                    <!--/.Card-->
-                    <!-- </section> -->
                 </div>
+            </section>
 
-                    
-                    <!--Grid column-->
+            <!-- Experience Section -->
+            <section id="experience" class="mb-5">
+                <div class="text-center mb-4">
+                    <h2><b>Professional Experience</b></h2>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5><b>Technical Solutions Specialist</b> – Application Support</h5>
+                        <ul>
+                            <li>Provided technical support for software applications and cloud-based platforms.</li>
+                            <li>Diagnosed and resolved complex customer issues related to system functionality and performance.</li>
+                            <li>Collaborated with engineering and product teams to escalate and resolve bugs.</li>
+                            <li>Improved customer experience through proactive troubleshooting and documentation.</li>
+                        </ul>
 
-      
+                        <h5><b>Customer Success Manager</b> – Go Integrations</h5>
+                        <ul>
+                            <li>Managed client relationships and ensured successful adoption of SaaS products.</li>
+                            <li>Provided onboarding, training, and technical guidance to new customers.</li>
+                            <li>Worked closely with product teams to improve features based on customer feedback.</li>
+                        </ul>
 
+                        <h5><b>Junior Software Developer</b> – Go Integrations</h5>
+                        <ul>
+                            <li>Developed and maintained web-based software features.</li>
+                            <li>Debugged and resolved technical issues in applications.</li>
+                            <li>Collaborated with development teams in an Agile environment.</li>
+                        </ul>
 
-        <!--  </div> -->
-        <br>
-        <br>
-
-
-
-
-        <div class="row ">
-            <div class="col-md-12 ">
-
-                <section id="four">
-                    <div class="text-center ">
-                        <h2 class="font-weight-bold text-uppercase ">Projects</h2>
+                        <h5><b>Cloud Analyst</b> – Shivaami Cloud Services</h5>
+                        <ul>
+                            <li>Managed Google Workspace implementations and migrations.</li>
+                            <li>Provided technical consulting and support for cloud solutions.</li>
+                            <li>Handled client onboarding and product demonstrations.</li>
+                        </ul>
                     </div>
-                </section>
+                </div>
+            </section>
 
-            </div>
+            <!-- Education Section -->
+            <section id="education" class="mb-5">
+                <div class="text-center mb-4">
+                    <h2><b>Education</b></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="https://Bhumi2512.github.io/img/MUN_Logo_Pantone.jpg" style="width:75px;" alt="MSc Computer Science">
+                        <h4><b>MSc in Computer Science</b></h4>
+                        <p>Memorial University of Newfoundland, Canada</p>
+                    </div>
+                    <div class="col-md-6 mb-4 text-center">
+                        <img src="https://Bhumi2512.github.io/img/GTU.jpg" style="width:75px;" alt="BE Electronics and Communication">
+                        <h4><b>BE in Electronics & Communication</b></h4>
+                        <p>Gujarat Technological University, India</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="mb-5">
+                <div class="text-center mb-4">
+                    <h2><b>Projects</b></h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card card-image text-center p-3">
+                            <h5 class="cyan-text accent-2"><i class="fas fa-eye"></i> Software Engineering</h5>
+                            <h3 class="card-title pt-2"><strong>GradRec Web System</strong></h3>
+                            <p>Graduate student recruitment system using Node.js, HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card card-image text-center p-3">
+                            <h5 class="yellow-text"><i class="fas fa-business-time"></i> Machine Learning</h5>
+                            <h3 class="card-title pt-2"><strong>Machine Learning with Python</strong></h3>
+                            <p>Implemented regression & classification algorithms to analyze datasets using Python.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card card-image text-center p-3">
+                            <h5 class="light-green-text accent-4"><i class="fab fa-node"></i> Web Development Bootcamp</h5>
+                            <h3 class="card-title pt-2"><strong>Full Stack Learning</strong></h3>
+                            <p>Completed Udemy online course on HTML, CSS, JavaScript, and Node.js for full-stack development.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="card card-image text-center p-3">
+                            <h5 class="pink-text"><i class="fas fa-project-diagram"></i> Image Processing</h5>
+                            <h3 class="card-title pt-2"><strong>Surveillance System</strong></h3>
+                            <p>Developed scene change detection system using MATLAB for image processing projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
-
-
-        <div class="row mb-4 ">
-            <!-- Card -->
-            <div class="col-lg-3 col-md-6 mb-4 ">
-                <div class="card card-image">
-
-                    <!-- Content -->
-                    <div class="text-black text-center">
-                        <div>
-                            <h5 class="cyan-text accent-2 "><i class="fas fa-eye "></i> Software Engineering</h5>
-                            <h3 class="card-title pt-2 "><strong>GradRec Web System</strong></h3>
-                            <p>It is a Graduate student  recruitment system using Node.js, CSS, HTML and JavaScript</p>
-                            <!--<a class="cyan-text accent-2 "><i class="fas fa-eye "></i> View project</a>-->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- Card -->
-            <!-- Card -->
-
-
-
-            <div class="col-lg-3 col-md-6 mb-4 ">
-                <div class="card card-image">
-
-                    <!-- Content -->
-                    <div class="text-black text-center">
-                        <div>
-                            <h5 class="yellow-text "><i class="fas fa-business-time "></i> Machine Learning </h5>
-                            <h3 class="card-title pt-2 "><strong>Machine Learning with Python</strong></h3>
-                            <p> Used Python to evaluate various machine learning Machine learning methods for Regression, Classification etc</p>
-                            <!-- <a class="btn btn-yellow" href="https://need2.work"><i class="fas fa-clone left "></i> Check out the Community </a> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- Card -->
-            <!-- Card -->
-
-
-            <div class="col-lg-3 col-md-6 mb-4 ">
-                <div class="card card-image ">
-
-                    <!-- Content -->
-                    <div class="text-black text-center">
-                        <div>
-                            <h5 class="light-green-text accent-4 "><i class="fab fa-node "></i> Web Development Bootcamp </h5>
-                            <h3 class="card-title pt-2 "><strong>Online course on Web Development</strong></h3>
-                            <p> I am learning how to be a full stack developer.For that I did online course in Udemy for HTML,CSS and Java.</p>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- Card -->
-            <!-- Card -->
-            <div class="col-lg-3 col-md-6 mb-4 ">
-                <div class="card card-image">
-
-                    <!-- Content -->
-                    <div class="text-black text-center">
-                        <div>
-                            <h5 class="pink-text "><i class="fas fa-project-diagram "></i> Image Processing</h5>
-                            <h3 class="card-title pt-2 "><strong>Surveillance system</strong></h3>
-                            <p>
-                                It is a surveillance system project build in MATLAB enviornment in MATLAB to detect Scene change..
-                            </p>
-
-
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- Card -->
-
-        </div>
-
-
-
-
-        <!--</div> -->
-        <!--Main container-->
     </main>
-    <!--Main layout-->
+
     <!-- Footer -->
     <footer class="page-footer font-small default-color pt-4 mt-4">
-
-        <!-- Footer Links -->
         <div class="container text-center text-md-left">
-
-            <!-- Grid row -->
             <div class="row">
-
-                <!-- Grid column -->
                 <div class="col-md-6 mt-md-0 mt-3">
-
-                    <!-- Content -->
-                    <!-- <h5 class="text-uppercase">Footer Content</h5> -->
-                    <p>“There is only one thing that makes a dream impossible to achieve: the fear of failure.”― Paulo Coelho</p>
-
+                    <p>“There is only one thing that makes a dream impossible to achieve: the fear of failure.” ― Paulo Coelho</p>
                 </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none pb-3">
-
-                <!-- Grid column -->
                 <div class="col-md-3 mb-md-0 mb-3">
-
-                    <!-- Links -->
                     <h5 class="text-uppercase">BHUMI TAILOR</h5>
-
                     <ul class="list-unstyled">
-                        <li>
-                            <p>33157,Hawthorne Avenue</p>
-                        </li>
-                        <li>
-                            <p>Abbotsford,BC.</p>
-                        </li>
-                        <li>
-                            <p>V2S 1B4</p>
-                        </li>
-                        <li>
-                            <p>bhoomi2512@gmail.com | https://www.linkedin.com/in/Bhumitailor/ </p>
-                        </li>
+                        <li>33157, Hawthorne Avenue</li>
+                        <li>Abbotsford, BC</li>
+                        <li>V2S 1B4</li>
+                        <li>Email: bhoomi2512@gmail.com</li>
+                        <li>LinkedIn: linkedin.com/in/bhumitailor</li>
                     </ul>
-
                 </div>
-                <!-- Grid column -->
-
-
-
             </div>
-            <!-- Grid row -->
-
         </div>
-        <!-- Footer Links -->
-        <!-- Copyright -->
         <div class="footer-copyright text-center py-3">
-            © 2018 Copyright:
-            <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            © 2026 Bhumi Tailor
         </div>
-        <!-- Copyright -->
-
     </footer>
-    <!-- Footer -->
-    <!-- /Start your project here-->
-    <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.4.0.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mdb.min.js"></script>
 </body>
 
 </html>
-
